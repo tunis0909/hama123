@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HAMA Games - موقع ألعاب احترافي</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: white;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, #ff416c, #ff4b2b);
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      margin: 8px 0 0;
+      font-size: 1.2em;
+      font-weight: 300;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      background-color: #111;
+      border-bottom: 1px solid #333;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #0ff;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ff416c;
+    }
+    section {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .game-box {
+      background: #222; /* أخف من قبل */
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 65, 108, 0.4);
+      transition: transform 0.3s ease;
+    }
+    .game-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(255, 65, 108, 0.6);
+    }
+    .game-box img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 8px;
+      margin-top: 10px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    iframe {
+      width: 100%;
+      max-width: 700px;
+      height: 400px;
+      border: none;
+      display: block;
+      margin: 10px auto;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 65, 108, 0.5);
+    }
+    .download-button {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #ff416c;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 15px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(255, 65, 108, 0.5);
+      transition: background-color 0.3s ease;
+    }
+    .download-button:hover {
+      background-color: #ff4b2b;
+    }
+    .game-description {
+      margin-top: 10px;
+      font-size: 1em;
+      color: #ccc;
+    }
+    .rating {
+      margin-top: 8px;
+      color: #ffcc00;
+      font-size: 1.1em;
+    }
+    @media (max-width: 768px) {
+      iframe {
+        height: 280px;
+      }
+      nav {
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HAMA GAMES</h1>
+    <p>أفضل الألعاب المباشرة والمكرّكة للكمبيوتر والجوال</p>
+  </header>
+  <nav>
+    <a href="#direct">ألعاب مباشرة</a>
+    <a href="#mobile">تحميل ألعاب الجوال</a>
+    <a href="#pc">تحميل ألعاب الكمبيوتر</a>
+  </nav>
+
+  <section id="direct">
+    <h2>🎮 ألعاب مباشرة</h2>
+    <div class="game-box">
+      <h3>Subway Surfers</h3>
+      <iframe src="https://www.crazygames.com/embed/subway-surfers" allowfullscreen></iframe>
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/02/Subway_Surfers_app_icon.png" alt="Subway Surfers" />
+      <p class="game-description">
+        لعبة سباق ممتعة حيث تهرب من الشرطي وتجمع العملات الذهبية أثناء الجري على سكك الحديد.
+      </p>
+      <div class="rating">⭐️⭐️⭐️⭐️☆ (4.0/5)</div>
+    </div>
+    <div class="game-box">
+      <h3>Car Parking</h3>
+      <iframe src="https://www.crazygames.com/embed/extreme-car-parking" allowfullscreen></iframe>
+      <img src="https://play-lh.googleusercontent.com/TxcehqBQmIg4PpS1nR0Ip1RzGLsAzcM8YqddvNAlJybshvpeVYQO1fxpgU4cFkWWDnq7" alt="Car Parking" />
+      <p class="game-description">
+        تحدي ركن السيارات بدقة في أماكن ضيقة مع تحكم واقعي بسيارتك.
+      </p>
+      <div class="rating">⭐️⭐️⭐️⭐️⭐️ (5.0/5)</div>
+    </div>
+    <div class="game-box">
+      <h3>Fireboy and Watergirl</h3>
+      <iframe src="https://www.crazygames.com/embed/fireboy-and-watergirl-1-forest-temple" allowfullscreen></iframe>
+      <img src="https://play-lh.googleusercontent.com/ghuYgK9rO3WvDGXBf4GvIxS-WJ3FiBzNDkP2b_RIzJD5Wcv_uPgyeMNqHgErPvNs5A" alt="Fireboy and Watergirl" />
+      <p class="game-description">
+        لعبة ألغاز تعاونية ممتعة تتحكم بشخصين لإكمال المستويات بحكمة وتنسيق.
+      </p>
+      <div class="rating">⭐️⭐️⭐️⭐️☆ (4.3/5)</div>
+    </div>
+    <div class="game-box">
+      <h3>Temple Run</h3>
+      <iframe src="https://www.crazygames.com/embed/temple-of-boom" allowfullscreen></iframe>
+      <img src="https://upload.wikimedia.org/wikipedia/en/1/13/Temple_Run_2_app_icon.png" alt="Temple Run" />
+      <p class="game-description">
+        لعبة جري لا نهائية مع عقبات ومغامرات في معبد مليء بالمخاطر.
+      </p>
+      <div class="rating">⭐️⭐️⭐️⭐️⭐️ (5.0/5)</div>
+    </div>
+  </section>
+
+  <section id="mobile">
+    <h2>📱 تحميل ألعاب الجوال</h2>
+    <div class="game-box">
+      <h3>Call of Duty Mobile</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/99/Call_of_Duty_Mobile_logo.jpg/220px-Call_of_Duty_Mobile_logo.jpg" alt="COD Mobile" />
+      <p class="game-description">لعبة إطلاق نار متعددة اللاعبين بجودة عالية وأوضاع متنوعة.</p>
+      <a class="download-button" href="https://example.com/cod-mobile.apk" target="_blank" rel="noopener">تحميل مباشر (APK)</a>
+    </div>
+    <div class="game-box">
+      <h3>Minecraft Pocket Edition</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" alt="Minecraft PE" />
+      <p class="game-description">إصدار الجوال من لعبة البناء والاستكشاف الشهيرة.</p>
+      <a class="download-button" href="https://example.com/minecraft-pe.apk" target="_blank" rel="noopener">تحميل مباشر (APK)</a>
+    </div>
+    <div class="game-box">
+      <h3>Free Fire</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/en/6/63/Garena_Free_Fire.png" alt="Free Fire" />
+      <p class="game-description">لعبة باتل رويال سريعة ومثيرة على الهاتف المحمول.</p>
+      <a class="download-button" href="https://example.com/free-fire.apk" target="_blank" rel="noopener">تحميل مباشر (APK)</a>
+    </div>
+    <div class="game-box">
+      <h3>Clash of Clans</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/en/f/fd/Clash_of_Clans_logo.png" alt="Clash of Clans" />
+      <p class="game-description">لعبة استراتيجية شهيرة لبناء القرى والمعارك الجماعية.</p>
+      <a class="download-button" href="https://example.com/clash-of-clans.apk" target="_blank" rel="noopener">تحميل مباشر (APK)</a>
+    </div>
+  </section>
+
+  <section id="pc">
+    <h2>💻 تحميل ألعاب الكمبيوتر</h2>
+    <div class="game-box">
+      <h3>GTA V (كرّاك)</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png" alt="GTA V" />
+      <p class="game-description">اللعبة الشهيرة لعالم مفتوح مع مهام وقصص متعددة.</p>
+      <a class="download-button" href="https://example.com/gta-v-crack.zip" target="_blank" rel="noopener">تحميل مباشر</a>
+    </div>
+    <div class="game-box">
+      <h3>Call of Duty 3 (كرّاك)</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/en/f/f0/Call_of_Duty_3_Game_Cover.jpg" alt="COD 3" />
+      <p class="game-description">لعبة إطلاق نار حربية مع حملات مثيرة.</p>
+      <a class="download-button" href="https://example.com/cod3-crack.zip" target="_blank" rel="noopener">تحميل مباشر</a>
+    </div>
+    <div class="game-box">
+      <h3>Minecraft Java Edition (كرّاك)</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" alt="Minecraft Java" />
+      <p class="game-description">نسخة الجافا الشهيرة للبناء والاستكشاف مع مزايا إضافية.</p>
+      <a class="download-button" href="https://example.com/minecraft-java-crack.zip" target="_blank" rel="noopener">تحميل مباشر</a>
+    </div>
+    <div class="game-box">
+      <h3>Red Dead Redemption 2 (كرّاك)</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg" alt="Red Dead Redemption 2" />
+      <p class="game-description">مغامرة الغرب الأمريكي المفتوحة مع قصة مثيرة.</p>
+      <a class="download-button" href="https://example.com/rdr2-crack.zip" target="_blank" rel="noopener">تحميل مباشر</a>
+    </div>
+    <div class="game-box">
+      <h3>FIFA 23 (كرّاك)</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/en/e/ed/FIFA_23_Cover.jpg" alt="FIFA 23" />
+      <p class="game-description">لعبة كرة قدم مع فرق ولاعبين واقعيين.</p>
+      <a class="download-button" href="https://example.com/fifa23-crack.zip" target="_blank" rel="noopener">تحميل مباشر</a>
+    </div>
+  </section>
+
+  <footer style="text-align:center;padding:20px;background:#111;color:#aaa;">
+    &copy; 2025 HAMA GAMES. جميع الحقوق محفوظة.
+  </footer>
+</body>
+</html>
